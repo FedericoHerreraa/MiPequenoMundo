@@ -1,0 +1,56 @@
+import React, { useState, useEffect }  from "react"
+import { Link, useLocation } from "react-router-dom"
+
+export const NavBar: React.FC = () => {
+    const [isNavbarFixed, setNavbarFixed] = useState(false);
+    const location = useLocation();
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        setNavbarFixed(scrollY > 50);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior:'smooth'
+        });
+    }
+
+    const isCurrentPage = (pathname: string) => {
+        return location.pathname === pathname
+    }
+
+    const img = {
+        backgroundImage: "url('src/img/jugando.jpg')",
+        width: '100%',
+        height: '70vh',
+        backgroundSize: 'cover',
+    };
+
+    return (
+        <div>
+            <div className={`bg-blue-950 z-50 flex flex-col md:flex-row justify-between items-center transition-all fixed w-screen pr-5 duration-300 ${isNavbarFixed ? 'w-screen h-16 transition-all duration-300 pr-5 bg-blue-950 shadow-lg' : 'h-24'}`}>
+                <div onClick={scrollToTop} className="flex text-gray-50 cursor-pointer items-center">
+                    <img className="mx-7 transition-all duration-300" src='/src/img/logo.png'  width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
+                    <h1 className={`cursor-pointer font-roboto text-3xl`}>Mi pequeño mundo</h1>       
+                </div>
+                <div className="flex text-gray-50 align-middle">
+                    <Link onClick={scrollToTop} to='/'  className={`bg-none px-4 py-2 rounded-lg transition-all duration-100 mx-5 cursor-pointer border border-solid hover:border-blue-800 border-blue-950 ${isCurrentPage('/') ? 'bg-blue-800' : ''}`}>Inicio</Link>
+                    <Link to='/historia' className={`bg-none px-4 py-2 rounded-lg transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/historia') ? 'bg-blue-800' : ''}`}>Nuestra historia</Link>
+                    <Link to='/inscripciones' className={`bg-none px-4 py-2 rounded-lg transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/inscripciones') ? 'bg-blue-800' : ''}`}>Inscripciones</Link>
+                    <Link to='/pago' className={`bg-none px-4 py-2 rounded-lg transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/pago') ? 'bg-blue-800' : ''}`}>Medios de pago</Link>
+                </div>
+            </div>
+            <div style={img} className="bg-fixed"></div>
+            <h1 className="text-7xl font-dancing-script text-slate-900 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">Mi pequeño mundo</h1>
+        </div>
+    )
+}

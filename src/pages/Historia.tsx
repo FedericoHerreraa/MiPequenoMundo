@@ -4,7 +4,7 @@ import React from "react"
 const NuestraHistoria: React.FC = () => {
     return (
         <div className="pt-20 text-center">
-            <h1 className="text-4xl text-white bg-blue-950 px-20 py-5 inline">Nuestra Historia</h1>
+            <h1 className="text-3xl text-white bg-blue-950 px-20 py-5 inline">Nuestra Historia</h1>
             <div className="w-2/3 ml-auto mr-auto mt-10">
                 <div className="col-span-2 py-10 px-5">
                     <p className="line leading-6 text-lg "><strong>E</strong>n un tranquilo rincón de la ciudad, se erige un encantador edificio que alberga un espacio mágico donde la risa de los  más pequeños y la ternura se entrelazan en un ballet de inocencia. Este es el Jardín de Infantes y Maternal "Mi pequeño mundo", un lugar donde los sueños de los niños comienzan a tomar forma desde temprana edad.

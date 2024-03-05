@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Inscripciones from "./pages/Inscripciones"
 import MediosDePago from "./pages/MediosDePago"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import './App.css'
 
 
 function App() {

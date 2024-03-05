@@ -40,17 +40,27 @@ export const NavBar: React.FC = () => {
             <div className={`bg-blue-950 z-50 flex flex-col md:flex-row justify-between items-center transition-all fixed w-screen pr-5 duration-300 ${isNavbarFixed ? 'w-screen h-16 transition-all duration-300 pr-5 bg-blue-950 shadow-lg' : 'h-24'}`}>
                 <div onClick={scrollToTop} className="flex text-gray-50 cursor-pointer items-center">
                     <img className="mx-7 transition-all duration-300" src='/src/img/logo.png'  width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
-                    <h1 className={`cursor-pointer font-roboto text-3xl`}>Mi pequeño mundo</h1>       
+                    <h1 className={`cursor-pointer text-3xl Berkshire`}>mi pequeño mundo</h1>       
                 </div>
-                <div className="flex text-gray-50 align-middle">
-                    <Link onClick={scrollToTop} to='/'  className={`bg-none px-4 py-2 rounded-lg transition-all duration-100 mx-5 cursor-pointer border border-solid hover:border-blue-800 border-blue-950 ${isCurrentPage('/') ? 'bg-blue-800' : ''}`}>Inicio</Link>
-                    <Link to='/historia' className={`bg-none px-4 py-2 rounded-lg transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/historia') ? 'bg-blue-800' : ''}`}>Nuestra historia</Link>
-                    <Link to='/inscripciones' className={`bg-none px-4 py-2 rounded-lg transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/inscripciones') ? 'bg-blue-800' : ''}`}>Inscripciones</Link>
-                    <Link to='/pago' className={`bg-none px-4 py-2 rounded-lg transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/pago') ? 'bg-blue-800' : ''}`}>Medios de pago</Link>
+                <div className="flex text-gray-50 align-middle items-center">
+                    <div className={`border-r border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
+                        <Link onClick={scrollToTop} to='/'  className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer border border-solid hover:border-blue-800 border-blue-950 ${isCurrentPage('/') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inicio</Link>
+                    </div>
+                    <div className={`border-r border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
+                        <Link to='/historia' className={`bg-none px-4 py-2 font-mono rounded-full transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/historia') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Nuestra historia</Link>
+                    </div>
+                    <div className={`border-r border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
+                        <Link to='/inscripciones' className={`bg-none px-4 font-mono py-2 rounded-full transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/inscripciones') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inscripciones</Link>
+                    </div>
+                    <div className={`flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
+                        <Link to='/pago' className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/pago') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Medios de pago</Link>
+                    </div>
                 </div>
             </div>
             <div style={img} className="bg-fixed"></div>
-            <h1 className="text-7xl font-dancing-script text-slate-900 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">Mi pequeño mundo</h1>
+            {/* <div className="w-96 h-12 px-10 opacity-55 py-5 bg-zinc-200 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">
+            </div>
+            <h1 className="text-5xl Berkshire text-blue-950 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">Mi pequeño mundo</h1> */}
         </div>
     )
 }

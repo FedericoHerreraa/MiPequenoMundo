@@ -4,8 +4,8 @@ export const Main: React.FC = () => {
     return (
         <div>
             <div>
-                <div className="bg-blue-950 ml-auto mr-auto w-1/4 mt-20 text-center py-6 shadow-xl">
-                    <h2 className="text-4xl text-white">Maternal</h2>
+                <div className="bg-blue-950 h-32 mt-20 text-center flex items-center justify-center opacity-85 py-6 shadow-xl border-y-4 border-solid border-red-700">
+                    <h2 className="text-5xl text-white font-mono">Maternal</h2>
                 </div>
                 <div className="m-10 w-2/3 ml-auto mr-auto">
                     <p>
@@ -14,16 +14,16 @@ export const Main: React.FC = () => {
                         Cada día en el Jardín Maternal está lleno de actividades diseñadas para estimular los sentidos y fomentar la exploración segura. Valoramos la comunicación abierta con los padres y nos esforzamos por construir una sólida relación de confianza para garantizar el bienestar y la felicidad de cada niño.
                         Recuerda personalizar estos ejemplos según la filosofía y valores específicos de tu jardín de infantes y jardín maternal. ¡Buena suerte con tu página web para el jardín de niños!
                     </p>
-                    <div className="flex gap-5 mt-10 justify-center">
-                        <img src="src/img/maternal.jpg" alt="imagen infantes" title="infantes" width={400}/>
-                        <img src="src/img/maternal2.jpeg"  alt="imagen infantes" title="infantes" width={400}/>
-                        <img src="src/img/maternal3.jpeg" alt="imagen infantes" title="infantes" width={400}/>
-                    </div>
+                </div>
+                <div className="flex gap-5 mt-10 justify-center shadow-2xl py-5 ">
+                    <img src="src/img/mat4.png" alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
+                    <img src="src/img/mat1.png"  alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
+                    <img src="src/img/mat3.png" alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
                 </div>
             </div>
             <div>
-                <div className="bg-red-900 ml-auto mr-auto w-1/4 text-center py-6 mt-40 shadow-xl">
-                    <h2 className="text-4xl text-white">Infantes</h2>
+                <div className="bg-red-900 flex items-center justify-center h-32 opacity-85 text-center py-6 mt-40 shadow-xl border-y-4 border-solid border-blue-700">
+                    <h2 className="text-5xl text-white font-mono">Infantes</h2>
                 </div>
                 <div className="m-10 w-2/3 ml-auto mr-auto">
                     <p>
@@ -31,11 +31,11 @@ export const Main: React.FC = () => {
                         En el Jardín de Infantes, nos dedicamos a proporcionar una educación preescolar de calidad que nutre la curiosidad natural de los niños y fomenta su amor por el aprendizaje. Contamos con un equipo de educadores altamente calificados y apasionados que guían a los niños a medida que exploran, descubren y crean en un ambiente seguro y estimulante.
                         Nuestro enfoque educativo se centra en el juego, la creatividad y la interacción social, brindando a los niños oportunidades para desarrollar habilidades sociales, emocionales, cognitivas y físicas. En el Jardín de Infantes, cada día es una nueva aventura llena de risas, descubrimientos y amistades duraderas.
                     </p>
-                    <div className="flex gap-5 mt-10 justify-center">
-                        <img src="src/img/infantes.jpeg" alt="imagen maternal" title="maternal" width={400} />
-                        <img src="src/img/infantes2.jpeg"  alt="imagen maternal" title="maternal" width={400}/>
-                        <img src="src/img/infantes3.jpeg" alt="imagen maternal" title="maternal" width={400}/>
-                    </div>
+                </div>
+                <div className="flex gap-5 mt-10 justify-center shadow-2xl py-5">
+                    <img src="src/img/inf1.png" alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300} />
+                    <img src="src/img/inf2.png"  alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
+                    <img src="src/img/inf3.png" alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
                 </div>
             </div>
         </div>

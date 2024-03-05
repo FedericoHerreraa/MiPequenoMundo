@@ -3,7 +3,7 @@
 const Inscripciones = () => {
     return (
         <div className="pt-20 text-center mb-20">
-            <h1 className="text-4xl text-white bg-blue-950 px-20 py-5 inline">Inscripciones</h1>
+            <h1 className="text-3xl text-white bg-blue-950 px-20 py-5 inline">Inscripciones</h1>
             <div className="mt-20">
                 <div className="flex flex-col items-center w-2/3 mx-auto justify-start">
                     <div className="flex flex-col items-start justify-start gap-10">

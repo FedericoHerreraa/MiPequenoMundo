@@ -1,0 +1,13 @@
+
+.imgBanner {
+    background-image: url('../../../img/jugando.jpg');
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+}
+
+.imgLogo {
+    background-image: url('../../../img/logo.png');
+    width: 20px;
+    height: 20px;
+}

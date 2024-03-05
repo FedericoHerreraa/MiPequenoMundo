@@ -1,6 +1,6 @@
-import { Contacto } from "../components/Contacto";
-import { Main } from "../components/Main";
-import { Location } from "../components/Location";
+import { Contacto } from "../components/Contactoi/Contacto";
+import { Main } from "../components/Main/Main";
+import { Location } from "../components/Ubicacion/Location";
 
 
 const Home = () => {

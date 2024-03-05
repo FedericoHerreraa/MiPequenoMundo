@@ -1,4 +1,4 @@
-import { NavBar } from "./components/NavBar"
+import { NavBar } from "./components/NavBar/NavBar"
 import NuestraHistoria from "./pages/Historia"
 import Home from "./pages/Home"
 import Inscripciones from "./pages/Inscripciones"

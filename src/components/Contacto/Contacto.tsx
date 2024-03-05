@@ -26,7 +26,7 @@ export const Contacto: React.FC = () => {
                         <p className="text-lg hover:underline">4791-0812</p>
                     </div>
                     <div className="flex gap-3 mt-4 border-b border-dashed border-slate-500 pb-5">
-                        <img src="/img/instagram-alt-logo-24.png" alt="instagram" className="w-24 h-24" width={28}/>
+                        <img src="/img/instagram-alt-logo-24.png" alt="instagram" width={28}/>
                         <a href="https://www.instagram.com/jardin.mipequenomundo/" target="blank" className="cursor-pointer">
                             <p className="text-lg hover:underline">Jardin Mi Pequeño Mundo</p>
                         </a>

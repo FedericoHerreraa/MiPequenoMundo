@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from "react"
 import { Link, useLocation } from "react-router-dom"
 import styles from './NavBar.module.css'
+import banner from '../../img/jugando.jpg'
 
 export const NavBar: React.FC = () => {
     const [isNavbarFixed, setNavbarFixed] = useState(false);
@@ -33,7 +34,7 @@ export const NavBar: React.FC = () => {
         <div>
             <div className={`bg-blue-950 z-50 flex flex-col md:flex-row justify-between items-center transition-all fixed w-screen pr-5 duration-300 ${isNavbarFixed ? 'w-screen h-16 transition-all duration-300 pr-5 bg-blue-950 shadow-lg' : 'h-24'}`}>
                 <div onClick={scrollToTop} className="flex text-gray-50 cursor-pointer items-center">
-                    <img className={`${styles.imgLogo} mx-7 rounded-full bg-white transition-all duration-300`} width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
+                    <img src="src/img/logo.png" className={` mx-7 rounded-full bg-white transition-all duration-300`} width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
                     <h1 className={`cursor-pointer text-3xl Berkshire`}>mi pequeño mundo</h1>       
                 </div>
                 <div className="flex text-gray-50 align-middle items-center">
@@ -51,7 +52,7 @@ export const NavBar: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${styles.imgBanner} bg-fixed`}></div>
+            <img src={banner} className={styles.imgBanner}/>
             {/* <div className="w-96 h-12 px-10 opacity-55 py-5 bg-zinc-200 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">
             </div>
             <h1 className="text-5xl Berkshire text-blue-950 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">Mi pequeño mundo</h1> */}

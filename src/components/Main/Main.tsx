@@ -1,4 +1,10 @@
 import React from "react"
+import mat1 from '../../img/mat1.png'
+import mat2 from '../../img/mat2.png'
+import mat3 from '../../img/mat3.png'
+import inf1 from '../../img/inf1.png'
+import inf2 from '../../img/inf2.png'
+import inf3 from '../../img/inf3.png'
 
 export const Main: React.FC = () => {
     return (
@@ -16,9 +22,9 @@ export const Main: React.FC = () => {
                     </p>
                 </div>
                 <div className="flex gap-5 mt-10 justify-center shadow-2xl py-5 ">
-                    <img src="/img/mat1.png" alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
-                    <img src="/img/mat2.png"  alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
-                    <img src="/img/mat3.png" alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
+                    <img src={mat1} alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
+                    <img src={mat2}  alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
+                    <img src={mat3} alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
                 </div>
             </div>
             <div>
@@ -33,9 +39,9 @@ export const Main: React.FC = () => {
                     </p>
                 </div>
                 <div className="flex gap-5 mt-10 justify-center shadow-2xl py-5">
-                    <img src="/img/inf1.png" alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300} />
-                    <img src="/img/inf2.png"  alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
-                    <img src="/img/inf3.png" alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
+                    <img src={inf1} alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300} />
+                    <img src={inf2}  alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
+                    <img src={inf3} alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
                 </div>
             </div>
         </div>

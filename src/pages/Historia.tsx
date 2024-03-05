@@ -16,9 +16,9 @@ const NuestraHistoria: React.FC = () => {
                 </div>
             </div>
             <div className="flex justify-center items-center bg-zinc-300 w-screen">
-                <img src="src/img/infantes.jpeg" className="" alt="" width={400} height={400}/>
-                <img src="src/img/infantes2.jpeg" className="" alt="" width={400} height={400}/>
-                <img src="src/img/infantes3.jpeg" className="" alt="" width={400} height={400}/>
+                <img src="dist/img/infantes.jpeg" className="" alt="" width={400} height={400}/>
+                <img src="dist/img/infantes2.jpeg" className="" alt="" width={400} height={400}/>
+                <img src="dist/img/infantes3.jpeg" className="" alt="" width={400} height={400}/>
             </div> 
         </div>
     )

@@ -16,9 +16,9 @@ export const Main: React.FC = () => {
                     </p>
                 </div>
                 <div className="flex gap-5 mt-10 justify-center shadow-2xl py-5 ">
-                    <img src="src/img/mat4.png" alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
-                    <img src="src/img/mat1.png"  alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
-                    <img src="src/img/mat3.png" alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
+                    <img src="dist/img/mat4.png" alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
+                    <img src="dist/img/mat1.png"  alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
+                    <img src="dist/img/mat3.png" alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300}/>
                 </div>
             </div>
             <div>
@@ -33,9 +33,9 @@ export const Main: React.FC = () => {
                     </p>
                 </div>
                 <div className="flex gap-5 mt-10 justify-center shadow-2xl py-5">
-                    <img src="src/img/inf1.png" alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300} />
-                    <img src="src/img/inf2.png"  alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
-                    <img src="src/img/inf3.png" alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
+                    <img src="dist/img/inf1.png" alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300} />
+                    <img src="dist/img/inf2.png"  alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
+                    <img src="dist/img/inf3.png" alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300}/>
                 </div>
             </div>
         </div>

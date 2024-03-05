@@ -18,15 +18,15 @@ export const Contacto: React.FC = () => {
                 <div>
                     <h2 className="text-3xl text-blue-700 mb-10 border-b border-blue-700 w-fit font-mono">Maternal</h2>
                     <div className="flex gap-3 border-b border-dashed border-slate-500 pb-5">
-                        <img src="src/img/envelope-solid-24.png" alt="correo" />
+                        <img src="dist/img/envelope-solid-24.png" alt="correo" />
                         <p className="text-lg hover:underline">mpmjardin@live.com</p>
                     </div>
                     <div className="flex gap-3 mt-4 border-b border-dashed border-slate-500 pb-5">
-                        <img src="src/img/phone-solid-24.png" alt="telefono" />
+                        <img src="dist/img/phone-solid-24.png" alt="telefono" />
                         <p className="text-lg hover:underline">4791-0812</p>
                     </div>
                     <div className="flex gap-3 mt-4 border-b border-dashed border-slate-500 pb-5">
-                        <img src="src/img/instagram-alt-logo-24.png" alt="instagram" width={28}/>
+                        <img src="dist/img/instagram-alt-logo-24.png" alt="instagram" width={28}/>
                         <a href="https://www.instagram.com/jardin.mipequenomundo/" target="blank" className="cursor-pointer">
                             <p className="text-lg hover:underline">Jardin Mi Pequeño Mundo</p>
                         </a>
@@ -35,15 +35,15 @@ export const Contacto: React.FC = () => {
                 <div>
                     <h2 className="text-3xl text-red-700 mb-10 border-b border-red-700 w-fit font-mono">Infantes</h2>
                     <div className="flex gap-3 border-b border-dashed border-slate-500 pb-5">
-                        <img src="src/img/envelope-solid-24.png" alt="correo" />
+                        <img src="dist/img/envelope-solid-24.png" alt="correo" />
                         <p className="text-lg hover:underline">mpmjardin@live.com</p>
                     </div>
                     <div className="flex gap-3 mt-4 border-b border-dashed border-slate-500 pb-5">
-                        <img src="src/img/phone-solid-24.png" alt="telefono" />
+                        <img src="dist/img/phone-solid-24.png" alt="telefono" />
                         <p className="text-lg hover:underline">4795-4782</p>
                     </div>
                     <div className="flex gap-3 mt-4 border-b border-dashed border-slate-500 pb-5">
-                        <img src="src/img/instagram-alt-logo-24.png" alt="instagram" width={28}/>
+                        <img src="dist/img/instagram-alt-logo-24.png" alt="instagram" width={28}/>
                         <a className="cursor-pointe" href="https://www.instagram.com/jardin.mipequenomundo/" target="blank">
                             <p className="text-lg hover:underline">Jardin Mi Pequeño Mundo</p>
                         </a>
@@ -51,11 +51,11 @@ export const Contacto: React.FC = () => {
                 </div>
             </div>
             <div onClick={desplazamiento} className="flex flex-col justify-center items-center mt-10">
-                <img className="cursor-pointer" src="src/img/chevron-up-regular-36.png" alt="" />
+                <img className="cursor-pointer" src="dist/img/chevron-up-regular-36.png" alt="" />
                 <p className="cursor-pointer px-4 py-1 rounded-xl border-2 border-solid border-blue-900 transition-all duration-200 hover:bg-blue-900 hover:text-white">Subir</p>
             </div>
             <div className="flex justify-center items-center gap-3 mt-10 mb-0 ">
-                <img src="src/img/copyright-regular-24.png" alt="copyright" title="copyright" />
+                <img src="dist/img/copyright-regular-24.png" alt="copyright" title="copyright" />
                 <p className="font-bold">Jardin maternal e infantes Mi Pequeño Mundo</p>
             </div>
         </div>

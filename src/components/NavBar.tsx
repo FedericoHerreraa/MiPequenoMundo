@@ -29,7 +29,7 @@ export const NavBar: React.FC = () => {
     }
 
     const img = {
-        backgroundImage: "url('src/img/jugando.jpg')",
+        backgroundImage: "url('dist/img/jugando.jpg')",
         width: '100%',
         height: '70vh',
         backgroundSize: 'cover',
@@ -39,7 +39,7 @@ export const NavBar: React.FC = () => {
         <div>
             <div className={`bg-blue-950 z-50 flex flex-col md:flex-row justify-between items-center transition-all fixed w-screen pr-5 duration-300 ${isNavbarFixed ? 'w-screen h-16 transition-all duration-300 pr-5 bg-blue-950 shadow-lg' : 'h-24'}`}>
                 <div onClick={scrollToTop} className="flex text-gray-50 cursor-pointer items-center">
-                    <img className="mx-7 transition-all duration-300" src='/src/img/logo.png'  width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
+                    <img className="mx-7 transition-all duration-300" src='dist/img/logo.png'  width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
                     <h1 className={`cursor-pointer text-3xl Berkshire`}>mi pequeño mundo</h1>       
                 </div>
                 <div className="flex text-gray-50 align-middle items-center">

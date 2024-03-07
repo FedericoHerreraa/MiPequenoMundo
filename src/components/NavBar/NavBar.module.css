@@ -1,7 +1,8 @@
 
 .imgBanner {
+    background-image: url('../../img/jugando.jpg');
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-size: cover;
 }
 

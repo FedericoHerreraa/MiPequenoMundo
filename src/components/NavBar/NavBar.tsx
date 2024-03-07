@@ -1,7 +1,7 @@
 import React, { useState, useEffect }  from "react"
 import { Link, useLocation } from "react-router-dom"
 import styles from './NavBar.module.css'
-import banner from '../../img/jugando.jpg'
+// import banner from '../../img/jugando.jpg'
 import logo from '../../img/logo.png'
 
 export const NavBar: React.FC = () => {
@@ -53,7 +53,7 @@ export const NavBar: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <img src={banner} className={styles.imgBanner}/>
+            <div className={`${styles.imgBanner} bg-fixed`}></div>
             {/* <div className="w-96 h-12 px-10 opacity-55 py-5 bg-zinc-200 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">
             </div>
             <h1 className="text-5xl Berkshire text-blue-950 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">Mi pequeño mundo</h1> */}

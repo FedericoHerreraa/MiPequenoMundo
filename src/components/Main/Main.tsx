@@ -10,7 +10,7 @@ export const Main: React.FC = () => {
     return (
         <div>
             <div>
-                <div className="bg-blue-950 h-32 mt-20 text-center flex items-center justify-center opacity-85 py-6 shadow-xl border-y-4 border-solid border-red-700">
+                <div className="bg-blue-950 h-32 mt-20 text-center flex items-center justify-center opacity-85 py-6 shadow-xl border-y-2 border-solid border-red-700">
                     <h2 className="text-5xl text-white font-mono">Maternal</h2>
                 </div>
                 <div className="m-10 w-2/3 ml-auto mr-auto">
@@ -28,7 +28,7 @@ export const Main: React.FC = () => {
                 </div>
             </div>
             <div>
-                <div className="bg-red-800 flex items-center justify-center h-32 opacity-85 text-center py-6 mt-40 shadow-xl border-y-4 border-solid border-blue-700">
+                <div className="bg-red-800 flex items-center justify-center h-32 opacity-85 text-center py-6 mt-40 shadow-xl border-y-2 border-solid border-blue-700">
                     <h2 className="text-5xl text-white font-mono">Infantes</h2>
                 </div>
                 <div className="m-10 w-2/3 ml-auto mr-auto">

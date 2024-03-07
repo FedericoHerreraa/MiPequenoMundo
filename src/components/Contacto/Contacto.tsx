@@ -61,7 +61,7 @@ export const Contacto: React.FC = () => {
             </div>
             <div className="flex justify-center items-center gap-3 mt-10 mb-0 ">
                 <img src={copy} alt="copyright" title="copyright" />
-                <p className="font-bold">Jardin maternal e infantes Mi Pequeño Mundo</p>
+                <p className="font-bold">Jardín maternal e infantes Mi Pequeño Mundo</p>
             </div>
         </div>
     )

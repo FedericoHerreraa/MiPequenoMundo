@@ -39,17 +39,17 @@ export const NavBar: React.FC = () => {
                     <h1 className={`cursor-pointer text-3xl Berkshire`}>mi pequeño mundo</h1>       
                 </div>
                 <div className="flex text-gray-50 align-middle items-center">
-                    <div className={`border-r border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
+                    <div className={`border-r-2 border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
                         <Link onClick={scrollToTop} to='/'  className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer border border-solid hover:border-blue-800 border-blue-950 ${isCurrentPage('/') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inicio</Link>
                     </div>
-                    <div className={`border-r border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
+                    <div className={`border-r-2 border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
                         <Link to='/historia' className={`bg-none px-4 py-2 font-mono rounded-full transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/historia') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Nuestra historia</Link>
                     </div>
-                    <div className={`border-r border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
+                    <div className={`border-r-2 border-red-800 flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
                         <Link to='/inscripciones' className={`bg-none px-4 font-mono py-2 rounded-full transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/inscripciones') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inscripciones</Link>
                     </div>
                     <div className={`flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
-                        <Link to='/pago' className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/pago') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Medios de pago</Link>
+                        <Link to='/pago' className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/pago') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Consultas</Link>
                     </div>
                 </div>
             </div>

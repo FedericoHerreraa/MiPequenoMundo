@@ -3,25 +3,43 @@
 const Inscripciones = () => {
     return (
         <div className="pt-20 text-center mb-20">
-            <h1 className="text-3xl text-white bg-blue-950 px-20 py-5 inline">Inscripciones</h1>
+            <div className="bg-blue-950 opacity-85 px-40 py-10 flex items-center justify-center border-y-2 border-red-400">
+                <h1 className="text-5xl text-white">Inscripciones</h1>
+            </div>
+            <div>
+                
+            </div>
             <div className="mt-20">
-                <div className="flex flex-col items-center w-2/3 mx-auto justify-start">
-                    <div className="flex flex-col items-start justify-start gap-10">
-                        <div className="text-left px-10 py-10 bg-zinc-300 ml-0-custom shadow-xl">
-                            <h1 className="text-4xl mb-5 ml-0-custom">Documentación</h1>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos doloremque earum magnam molestiae numquam quis excepturi inventore dolorem impedit aperiam asperiores atque maiores quam aliquid, corrupti illum ratione possimus velit.
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, quam. Cumque quas eveniet, illum placeat aut eum fuga molestias voluptate rerum sint quis ipsam, a cum, repudiandae nobis expedita sed!
-                            </p>
-                        </div>
-                        <div className="text-left px-10 py-10 bg-zinc-400 ml-0-custom shadow-xl">
-                            <h1 className="text-4xl mb-5 ml-0-custom">Horarios</h1>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos doloremque earum magnam molestiae numquam quis excepturi inventore dolorem impedit aperiam asperiores atque maiores quam aliquid, corrupti illum ratione possimus velit.
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, quam. Cumque quas eveniet, illum placeat aut eum fuga molestias voluptate rerum sint quis ipsam, a cum, repudiandae nobis expedita sed!
-                            </p>
-                        </div>
-                    </div>
+                <div className="h-28 shadow-2xl flex items-center justify-center">
+                    <h1 className="text-4xl">Documentación</h1>
+                </div>
+                <div className="mx-auto w-2/3 mt-10">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim debitis iure incidunt est dolor adipisci eius corporis, qui sequi aut ducimus dignissimos quasi! Commodi nisi expedita repellat ex, rerum recusandae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci consequatur molestias, deleniti nobis amet nulla alias ullam quis dignissimos quidem ut cupiditate consectetur nisi veniam vitae dolores praesentium culpa.
+                    </p>
+                </div>
+            </div>
+            <div className="mt-20">
+                <div className="h-28 shadow-2xl flex items-center justify-center">
+                    <h1 className="text-4xl">Horarios de atención</h1>
+                </div>
+                <div className="mx-auto w-2/3 mt-10">
+                    <p className="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim debitis iure incidunt est dolor adipisci eius corporis, qui sequi aut ducimus dignissimos quasi! Commodi nisi expedita repellat ex, rerum recusandae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci consequatur molestias, deleniti nobis amet nulla alias ullam quis dignissimos quidem ut cupiditate consectetur nisi veniam vitae dolores praesentium culpa.
+                    </p>
+                </div>
+            </div>
+            <div className="mt-20">
+                <div className="h-28 shadow-2xl flex items-center justify-center">
+                    <h1 className="text-4xl">Medios de pago</h1>
+                </div>
+                <div className="mx-auto w-2/3 mt-10">
+                    <p className="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim debitis iure incidunt est dolor adipisci eius corporis, qui sequi aut ducimus dignissimos quasi! Commodi nisi expedita repellat ex, rerum recusandae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci consequatur molestias, deleniti nobis amet nulla alias ullam quis dignissimos quidem ut cupiditate consectetur nisi veniam vitae dolores praesentium culpa.
+                    </p>
                 </div>
             </div>
         </div>

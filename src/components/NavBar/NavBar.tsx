@@ -49,7 +49,7 @@ export const NavBar: React.FC = () => {
                         <Link to='/inscripciones' className={`bg-none px-4 font-mono py-2 rounded-full transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/inscripciones') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inscripciones</Link>
                     </div>
                     <div className={`flex items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
-                        <Link to='/pago' className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/pago') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Consultas</Link>
+                        <Link to='/pago' className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer border hover:border-blue-800 border-solid border-blue-950 ${isCurrentPage('/pago') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Consultanos</Link>
                     </div>
                 </div>
             </div>

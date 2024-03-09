@@ -57,7 +57,7 @@ export const Contacto: React.FC = () => {
             </div>
             <div onClick={desplazamiento} className="flex flex-col justify-center items-center mt-10">
                 <img className="cursor-pointer" src={arrow} alt="" />
-                <p className="cursor-pointer px-4 py-1 rounded-xl border-2 border-solid border-blue-900 transition-all duration-200 hover:bg-blue-900 hover:text-white">Subir</p>
+                <p className="cursor-pointer px-4 py-1 rounded-xl border-2 border-solid border-blue-900 transition-all duration-200 hover:bg-blue-900 hover:text-white">Volver</p>
             </div>
             <div className="flex justify-center items-center gap-3 mt-10 mb-0 ">
                 <img src={copy} alt="copyright" title="copyright" />

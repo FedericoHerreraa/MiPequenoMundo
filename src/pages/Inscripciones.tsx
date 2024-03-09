@@ -5,15 +5,18 @@ import foto4 from '../img/foto4.png'
 
 const Inscripciones = () => {
     return (
-        <div className="pt-20 text-center mb-20">
-            <div className="bg-blue-950 opacity-85 px-40 py-10 flex items-center justify-center border-y-2 border-red-400">
+        <div className="text-center mb-20">
+            {/* <div className="bg-blue-950 opacity-85 px-40 py-10 flex items-center justify-center border-y-2 border-red-400">
                 <h1 className="text-5xl text-white font-mono">Inscripciones</h1>
+            </div> */}
+            <div className="h-32 shadow-2xl flex mb-20 justify-center items-center">
+                <h1 className="text-5xl text-blue-900 font-mono">Inscripciones</h1>
             </div>
             <div className="flex gap-10 justify-center mt-10">
-                <img src={foto1} alt="" className='rounded-3xl shadow-lg' width={300}/>
-                <img src={foto2} alt="" className='rounded-3xl shadow-lg' width={300}/>
-                <img src={foto3} alt="" className='rounded-3xl shadow-lg' width={300}/>
-                <img src={foto4} alt="" className='rounded-3xl shadow-lg' width={300}/>
+                <img src={foto1} alt="" className='rounded-3xl shadow-lg' width={250}/>
+                <img src={foto2} alt="" className='rounded-3xl shadow-lg' width={250}/>
+                <img src={foto3} alt="" className='rounded-3xl shadow-lg' width={250}/>
+                <img src={foto4} alt="" className='rounded-3xl shadow-lg' width={250}/>
             </div>
             <div className="mt-20">
                 <div className="h-28 shadow-2xl flex items-center justify-center">

@@ -7,7 +7,6 @@ import ft3 from '../../img/ft3.png'
 import ft4 from '../../img/ft4.png'
 import jardinInf from '../../img/jardin infante.png'
 
-
 export const Location: React.FC = () => {
     return  (
         <>
@@ -26,6 +25,7 @@ export const Location: React.FC = () => {
                 </div>
             </div>
             <div className="flex gap-10 mt-10 justify-center shadow-2xl py-5 h-72">
+                {/* <div className={`${styles.imgBanner} bg-fixed`}></div> */}
                 <img src={ft1} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
                 <img src={ft2}  alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
                 <img src={ft3} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>

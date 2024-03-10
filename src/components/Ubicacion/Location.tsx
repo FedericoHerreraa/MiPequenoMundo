@@ -7,8 +7,6 @@ import ft3 from '../../img/ft3.png'
 import ft4 from '../../img/ft4.png'
 import jardinInf from '../../img/jardin infante.png'
 
-//comentarioooo
-
 export const Location: React.FC = () => {
     return  (
         <>

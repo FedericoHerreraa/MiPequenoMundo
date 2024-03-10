@@ -24,12 +24,14 @@ export const Location: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-10 mt-10 justify-center shadow-2xl py-5 h-72">
-                {/* <div className={`${styles.imgBanner} bg-fixed`}></div> */}
-                <img src={ft1} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
-                <img src={ft2}  alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
-                <img src={ft3} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
-                <img src={ft4} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
+            <div className="shadow-2xl py-5 h-96">
+                <h1 className="flex justify-center text-5xl text-blue-950 font-mono">Nuestras actividades</h1>
+                <div className="flex gap-10 mt-10 justify-center">
+                    <img src={ft1} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
+                    <img src={ft2}  alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
+                    <img src={ft3} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
+                    <img src={ft4} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250}/>
+                </div>
             </div>
             <div className="flex flex-col items-center mx-10 mt-20">
                 <div className="m-20">

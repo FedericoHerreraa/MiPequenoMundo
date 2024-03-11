@@ -16,10 +16,10 @@ export const Contacto: React.FC = () => {
 
     return  (
         <div className="flex flex-col items-center mt-20 pb-5 rounded-t-full shadow-2xl">
-            <div className="px-20 py-1 bg-red-800 mt-20 rounded-full shadow-2xl">
-                <h1 className="text-5xl my-5 text-slate-300 font-mono">Contactanos</h1>
+            <div className="md:px-20 px-10 py-1 bg-red-800 mt-20 rounded-full shadow-2xl">
+                <h1 className="md:text-5xl text-3xl my-5 text-slate-300 font-mono">Contactanos</h1>
             </div>
-            <div  className="my-20 grid grid-cols-2 gap-96">
+            <div  className="my-20 grid md:grid-cols-2 md:gap-96 grid-cols-1 gap-20">
                 <div>
                     <h2 className="text-3xl text-blue-700 mb-10 border-b border-blue-700 w-fit font-mono">Maternal</h2>
                     <div className="flex gap-3 border-b border-dashed border-slate-500 pb-5">

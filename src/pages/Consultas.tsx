@@ -1,3 +1,4 @@
+import { sendScoolEmailRequest } from '../api/mail'
 import logo from '../img/logo.png'
 import { useState } from 'react'
 
@@ -41,8 +42,9 @@ const Consultas = () => {
                 mensaje: mensaje,
                 opcion: opcion
             }
-            console.log(emailSend)
-    
+            
+            await sendScoolEmailRequest(emailSend)
+            
             setEmail('')
             setEmail2('')
             setNombre('')

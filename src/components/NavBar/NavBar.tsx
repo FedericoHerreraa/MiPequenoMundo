@@ -48,23 +48,23 @@ export const NavBar: React.FC = () => {
                     {/* SideNavStart */}
                     <div className="md:hidden block cursor-pointer" onClick={handleSideNav}>
                         <img src={menuItem} alt="" />
-                        <div className={`fixed inset-y-0 right-0 z-50 transition-all duration-300 w-0 bg-gray-800 ${isSideNavOpen ? 'transition-all duration-300 w-64 translate-x-0' : 'transition-all duration-300 w-0'}`}>
+                        <div className={`fixed inset-y-0 right-0 z-50 transition-all duration-50 w-0 bg-gray-800 ${isSideNavOpen ? 'w-64 translate-x-0' : 'w-0'}`}>
                             <div className="flex flex-col items-center mt-10">
                                 <div onClick={handleSideNav} className={isSideNavOpen ? 'block' : 'hidden'}>
                                     <img src={close} alt="close" title="close" />
                                 </div>
-                                <div className={`flex flex-col gap-4 mt-10 ${isSideNavOpen ? 'block' : 'hidden'}`}>
-                                    <Link to='/' className="flex justify-center py-2 px-5 rounded-full border border-solid border-blue-950">
-                                        <p >Inicio</p>
+                                <div className={`flex flex-col gap-4 mt-10 transition-all duration-1000  ${isSideNavOpen ? 'transition-all duration-1000 block' : 'transition-all duration-1000 hidden'}`}>
+                                    <Link to='/' className="flex justify-center py-2 px-4 rounded-full border border-solid border-blue-950">
+                                        <p className="font-mono">Inicio</p>
                                     </Link>
                                     <Link to='/historia' className="flex justify-center py-2 px-5 rounded-full border border-solid border-blue-950">
-                                        <p >Nuestra Historia</p>
+                                        <p className="font-mono">Nuestra Historia</p>
                                     </Link>
                                     <Link to='/inscripciones' className="flex justify-center py-2 px-5 rounded-full border border-solid border-blue-950">
-                                        <p>Inscripciones</p>
+                                        <p className="font-mono">Inscripciones</p>
                                     </Link>
                                     <Link to='/consultas' className="flex justify-center py-2 px-5 rounded-full border border-solid border-blue-950">
-                                        <p>Consultanos</p>
+                                        <p className="font-mono">Consultanos</p>
                                     </Link>
                                 </div>
                             </div>

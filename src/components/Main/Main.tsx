@@ -16,7 +16,7 @@ export const Main: React.FC = () => {
         <div>
             <div>
                 <div className="h-16 shadow-2xl mb-20 flex justify-center items-center">
-                    <h1 className="text-2xl text-blue-900"></h1>
+                    <h1 className="text-2xl text-blue-900">{esMobile() ? 'Bienvenidos' : ''}</h1>
                 </div>
                 <div className="bg-blue-950 h-32 mt-20 text-center flex items-center justify-center opacity-85 py-6 shadow-xl border-y-2 border-solid border-red-700">
                     <h2 className="md:text-5xl text-white font-mono text-4xl">Maternal</h2>

@@ -8,7 +8,7 @@ const SideNav: React.FC = () => {
     const handleSideNav = () => setSideNav(!isOpen)
 
     return (
-        <div className={`fixed inset-y-0 right-0 z-50 transition-transform transform duration-300 bg-gray-800 ${isOpen ? 'transition-all duration-300 w-64 translate-x-0' : 'transition-all duration-300 w-0'}`}>
+        <div className={`fixed inset-y-0 right-0 z-50 transition-all duration-300 bg-gray-800 ${isOpen ? 'transition-all duration-300 w-64 translate-x-0' : 'transition-all duration-300 w-0'}`}>
             <div className="flex flex-col items-center mt-10">
                 <div onClick={handleSideNav}>
                     <img src={close} alt="close" title="close" />

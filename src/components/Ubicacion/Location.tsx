@@ -58,7 +58,7 @@ export const Location: React.FC = () => {
                         </Carousel>
                     </div>
                 ) : (
-                    <div className="shadow-2xl py-5 h-96">
+                    <div className="shadow-2xl pt-3 h-96">
                         <h1 className="flex justify-center md:text-5xl text-3xl text-blue-950 font-mono">Nuestras actividades</h1>
                         <div className="flex gap-10 mt-10 justify-center">
                             <img src={ft1} alt="imagen infantes" className="rounded-3xl shadow-lg" title="infantes" width={250} />

@@ -48,7 +48,7 @@ export const NavBar: React.FC = () => {
                     {/* SideNavStart */}
                     <div className="md:hidden block cursor-pointer" onClick={handleSideNav}>
                         <img src={menuItem} alt="" />
-                        <div className={`fixed inset-y-0 right-0 z-50 transition-all duration-50 w-0 bg-gray-800 ${isSideNavOpen ? 'w-64 translate-x-0' : 'w-0'}`}>
+                        <div className={`fixed inset-y-0 right-0 z-50 transition-all duration-50 w-0 bg-gray-800 ${isSideNavOpen ? 'w-72 translate-x-0' : 'w-0'}`}>
                             <div className="flex flex-col items-center mt-10">
                                 <div onClick={handleSideNav} className={isSideNavOpen ? 'block' : 'hidden'}>
                                     <img src={close} alt="close" title="close" />

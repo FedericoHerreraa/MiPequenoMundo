@@ -67,7 +67,7 @@ export const NavBar: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${isMobile() ? `${styles.imgMobBanner}` : `${styles.imgBanner}`}  bg-fixed`}></div>
+            <div className={`${isMobile() ? `${styles.imgMobBanner}` : `${styles.imgBanner}`}  md:bg-fixed`}></div>
             {/* <div className="w-96 h-12 px-10 opacity-55 py-5 bg-zinc-200 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">
             </div>
             <h1 className="text-5xl Berkshire text-blue-950 absolute top-2/4 z-40 left-1/2 transform -translate-x-1/2">Mi pequeño mundo</h1> */}

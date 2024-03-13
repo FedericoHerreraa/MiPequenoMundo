@@ -59,7 +59,7 @@ const Consultas = () => {
                 <h1 className="text-5xl text-blue-900 font-mono">Consultanos</h1>
             </div>
             <div className="mx-auto w-1/3 flex flex-col items-center border-x border-x-red-600 mb-10">
-                <div className="mb-10 flex items-center gap-5">
+                <div className="mb-10 flex items-center gap-2">
                     <img src={logo} alt="" width={60}/>
                     <h1 className="text-3xl">Jardín Mi Pequeño Mundo</h1>
                 </div>
@@ -138,7 +138,7 @@ const Consultas = () => {
                         <input
                             type="submit"
                             value="Enviar"
-                            className="px-5 py-2 w-1/4 border border-red-500 rounded-md cursor-pointer text-black text-base transition-all duration-100 mb-10 hover:bg-red-800 hover:text-white"
+                            className="px-5 py-2 w-1/4 border border-solid border-red-500 flex justify-center rounded-md cursor-pointer text-black text-base transition-all duration-100 mb-10 hover:bg-red-800 hover:text-white"
                         />
                     </div>
                 </form>

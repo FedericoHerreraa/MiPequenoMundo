@@ -38,7 +38,7 @@ export const NavBar: React.FC = () => {
     return (
         <div>
             <div className={`bg-blue-950 z-50 flex justify-between items-center transition-all fixed w-screen pr-5 duration-300 ${isNavbarFixed ? 'w-screen h-16 transition-all duration-300 pr-5 bg-blue-950 shadow-lg' : 'h-24'}`}>
-                <Link to='/' onClick={scrollToTop} className={`flex text-gray-50 transition-all duration-150 cursor-pointer items-center  ${isSideNavOpen ? 'opacity-70' : ''}`}>
+                <Link to='/' onClick={scrollToTop} className={`flex text-gray-50 transition-all duration-150 mr-20 cursor-pointer items-center  ${isSideNavOpen ? 'opacity-70' : ''}`}>
                     <div className="md:mx-7">
                         <img src={logo} className={` mx-2 rounded-full bg-white transition-all duration-300`} width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
                     </div>
@@ -72,16 +72,16 @@ export const NavBar: React.FC = () => {
                     </div>
                     {/* SideNavEnd */}
                     <div className={`md:flex hidden border-r-2 border-red-800  items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
-                        <Link onClick={scrollToTop} to='/' className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer  ${isCurrentPage('/') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inicio</Link>
+                        <Link onClick={scrollToTop} to='/' className={`bg-none px-3 py-2 rounded-full font-mono transition-all duration-100 mx-3 cursor-pointer  ${isCurrentPage('/') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inicio</Link>
                     </div>
                     <div className={`md:flex hidden border-r-2 border-red-800  items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
-                        <Link to='/historia' className={`bg-none px-4 py-2 font-mono rounded-full transition-all duration-100 mx-5 cursor-pointer  ${isCurrentPage('/historia') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Nuestra historia</Link>
+                        <Link to='/historia' className={`bg-none px-4 py-2 font-mono rounded-full transition-all duration-100 mx-3 cursor-pointer  ${isCurrentPage('/historia') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Nuestra historia</Link>
                     </div>
                     <div className={`md:flex hidden border-r-2 border-red-800  items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
-                        <Link to='/inscripciones' className={`bg-none px-4 font-mono py-2 rounded-full transition-all duration-100 mx-5 cursor-pointer  ${isCurrentPage('/inscripciones') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inscripciones</Link>
+                        <Link to='/inscripciones' className={`bg-none px-4 font-mono py-2 rounded-full transition-all duration-100 mx-3 cursor-pointer  ${isCurrentPage('/inscripciones') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Inscripciones</Link>
                     </div>
                     <div className={`md:flex hidden  items-center ${isNavbarFixed ? 'h-10' : 'h-14'}`}>
-                        <Link to='/consultas' className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-5 cursor-pointer  ${isCurrentPage('/pago') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Consultanos</Link>
+                        <Link to='/consultas' className={`bg-none px-4 py-2 rounded-full font-mono transition-all duration-100 mx-3 cursor-pointer  ${isCurrentPage('/consultas') ? 'bg-blue-800' : ''} ${isNavbarFixed ? 'text-sm' : 'text-md'}`}>Consultanos</Link>
                     </div>
                 </div>
             </div>

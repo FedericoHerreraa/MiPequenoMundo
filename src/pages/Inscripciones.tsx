@@ -5,7 +5,7 @@ import foto4 from '../img/foto4.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 
-const Inscripciones = () => {
+export default function Inscripciones() {
     const esMobile = () => window.innerWidth < 768;
 
     return (
@@ -99,5 +99,3 @@ const Inscripciones = () => {
         </div>
     );
 };
-
-export default Inscripciones;

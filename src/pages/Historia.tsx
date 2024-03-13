@@ -1,7 +1,5 @@
-import React from "react"
 
-
-const NuestraHistoria: React.FC = () => {
+export default function NuestraHistoria() {
     return (
         <div className="">
             {/* <div className="bg-blue-950 opacity-85 px-40 py-10 flex items-center justify-center border-y-2 border-red-400">
@@ -32,5 +30,3 @@ const NuestraHistoria: React.FC = () => {
         </div>
     )
 }
-
-export default NuestraHistoria

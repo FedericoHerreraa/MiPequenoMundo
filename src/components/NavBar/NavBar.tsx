@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 import styles from './NavBar.module.css'
 import logo from '../../img/logo.png'
 import menuItem from '../../img/menu-regular-24.png'
 import close from '../../img/right-arrow-alt-regular-24.png'
 
-export const NavBar: React.FC = () => {
+export default function NavBar() {
     const [isNavbarFixed, setNavbarFixed] = useState(false);
     const [isSideNavOpen, setSideNavOpen] = useState(false);
 

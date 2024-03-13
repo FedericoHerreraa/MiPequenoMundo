@@ -2,7 +2,7 @@ import { sendScoolEmailRequest } from '../api/mail'
 import logo from '../img/logo.png'
 import { useState } from 'react'
 
-const Consultas = () => {
+export default function Consultas() {
     const [nombre, setNombre] = useState<string>('')
     const [email, setEmail] = useState<string>('')
     const [email2, setEmail2] = useState<string>('')
@@ -148,5 +148,3 @@ const Consultas = () => {
         </div>
     )
 }
-
-export default Consultas

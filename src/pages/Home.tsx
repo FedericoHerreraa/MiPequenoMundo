@@ -1,9 +1,9 @@
-import { Contacto } from "../components/Contacto/Contacto";
-import { Main } from "../components/Main/Main";
+import Contacto from "../components/Contacto/Contacto";
+import Main from "../components/Main/Main";
 import { Location } from "../components/Ubicacion/Location";
 
 
-const Home = () => {
+export default function Home() {
     return (
         <>
             <Main/>
@@ -12,5 +12,3 @@ const Home = () => {
         </>
     )
 }
-
-export default Home;

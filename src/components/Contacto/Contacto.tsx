@@ -1,4 +1,3 @@
-import React from "react"
 import envelope from '../../img/envelope-solid-24.png'
 import phone from '../../img/phone-solid-24.png'
 import ig from '../../img/instagram-alt-logo-24.png'
@@ -6,7 +5,7 @@ import arrow from '../../img/chevron-up-regular-36.png'
 import copy from '../../img/copyright-regular-24.png'
 
 
-export const Contacto: React.FC = () => {
+export default function Contacto() {
     const desplazamiento = () => {
         window.scrollTo({
             top: 0,

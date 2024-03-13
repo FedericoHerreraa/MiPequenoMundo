@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import close from '../../img/right-arrow-alt-regular-24.png'
 
-const SideNav: React.FC = () => {
+export default function SideNav() {
     const [isOpen, setSideNav] = useState(true)
 
     const handleSideNav = () => setSideNav(!isOpen)
@@ -31,5 +31,3 @@ const SideNav: React.FC = () => {
         </div>
     )
 }
-
-export default SideNav;

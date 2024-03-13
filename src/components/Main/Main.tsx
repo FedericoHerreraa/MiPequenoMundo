@@ -1,15 +1,17 @@
-import React from "react"
 import mat1 from '../../img/mat1.png'
 import mat2 from '../../img/mat2.png'
 import mat3 from '../../img/mat3.png'
 import inf1 from '../../img/inf1.png'
 import inf2 from '../../img/inf2.png'
 import inf3 from '../../img/inf3.png'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from 'react-bootstrap';
+import MainCarousel from "../MainCarousel"
 
-export const Main: React.FC = () => {
+export default function Main() {
     const esMobile = () => window.innerWidth < 768;
+
+    const matImgObj = { img1: mat1, img2: mat2, img3: mat3 }
+
+    const infImgObj = { img1: inf1, img2: inf2, img3: inf3 }
 
     return (
         <div>
@@ -32,31 +34,7 @@ export const Main: React.FC = () => {
                 </div>
                 {
                     esMobile() ? (
-                        <div className="h-96 shadow-2xl">
-                            <Carousel className="h-72 pt-3">
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100 rounded-full h-80"
-                                        src={mat1}
-                                        alt="Primera imagen"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100 rounded-full h-80"
-                                        src={mat2}
-                                        alt="Segunda imagen"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100 rounded-full h-80"
-                                        src={mat3}
-                                        alt="Tercera imagen"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
-                        </div>
+                        <MainCarousel img={matImgObj}/>
                     ) : (
                         <div className="flex gap-5 mt-10 justify-center shadow-2xl py-5 ">
                             <img src={mat1} alt="imagen infantes" className="rounded-full border border-slate-400" title="infantes" width={300} />
@@ -81,31 +59,7 @@ export const Main: React.FC = () => {
                 </div>
                 {
                     esMobile() ? (
-                        <div className="h-96 shadow-2xl">
-                            <Carousel className="h-72 pt-3">
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100 rounded-full h-80"
-                                        src={inf1}
-                                        alt="Primera imagen"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100 rounded-full h-80"
-                                        src={inf2}
-                                        alt="Segunda imagen"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100 rounded-full h-80"
-                                        src={inf3}
-                                        alt="Tercera imagen"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
-                        </div>
+                        <MainCarousel img={infImgObj}/>
                     ) : (
                         <div className="flex gap-5 mt-10 justify-center shadow-2xl py-5">
                             <img src={inf1} alt="imagen maternal" className="rounded-full border border-slate-400" title="maternal" width={300} />

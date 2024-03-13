@@ -38,16 +38,18 @@ export const NavBar: React.FC = () => {
     return (
         <div>
             <div className={`bg-blue-950 z-50 flex justify-between items-center transition-all fixed w-screen pr-5 duration-300 ${isNavbarFixed ? 'w-screen h-16 transition-all duration-300 pr-5 bg-blue-950 shadow-lg' : 'h-24'}`}>
-                <Link to='/' onClick={scrollToTop} className={`flex text-gray-50 transition-all duration-150 mr-20 cursor-pointer items-center  ${isSideNavOpen ? 'opacity-70' : ''}`}>
-                    <div className="md:mx-7">
-                        <img src={logo} className={` mx-2 rounded-full bg-white transition-all duration-300`} width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
-                    </div>
-                    <h1 className={`cursor-pointer text-3xl Berkshire`}>mi pequeño mundo</h1>
-                </Link>
+                <div className="mr-0">  
+                    <Link to='/' onClick={scrollToTop} className={`flex text-gray-50 transition-all duration-150 md:mr-20 cursor-pointer items-center  ${isSideNavOpen ? 'opacity-70' : ''}`}>
+                        <div className="md:mx-7">
+                            <img src={logo} className={` mx-2 rounded-full bg-white transition-all duration-300`} width={isNavbarFixed ? '0' : '60'} alt="logo" title="logo" />
+                        </div>
+                        <h1 className={`cursor-pointer text-3xl Berkshire`}>mi pequeño mundo</h1>
+                    </Link>
+                </div>
                 <div className="flex text-gray-50 align-middle items-center">
                     {/* SideNavStart */}
                     <div className="md:hidden block cursor-pointer" onClick={handleSideNav}>
-                        <img src={menuItem} alt="" />
+                        <img src={menuItem} alt="menu" title="menu" />
                         <div className={`fixed inset-y-0 right-0 z-50 transition-all duration-50 w-0 bg-gray-800 ${isSideNavOpen ? 'w-72 translate-x-0' : 'w-0'}`}>
                             <div className="flex flex-col items-center mt-10">
                                 <div onClick={handleSideNav} className={isSideNavOpen ? 'block' : 'hidden'}>

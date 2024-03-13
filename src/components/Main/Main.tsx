@@ -6,7 +6,6 @@ import inf1 from '../../img/inf1.png'
 import inf2 from '../../img/inf2.png'
 import inf3 from '../../img/inf3.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import styles from './Main.module.css'
 import { Carousel } from 'react-bootstrap';
 
 export const Main: React.FC = () => {

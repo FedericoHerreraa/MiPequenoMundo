@@ -29,5 +29,12 @@ module.exports = {
         "react"
     ],
     "rules": {
+        '@typescript-eslint/interface-name-prefix': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+        "no-unused-variable": false,
+        "no-var-requires": false,
+        "no-implicit-dependencies": false
     }
 }
